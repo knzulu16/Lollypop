@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/light.css">
+    <title>Lights</title>
+  </head>
+  <body>
+    <style>
+    #pole{
+      height: 200px;
+      width: 20px;
+      background-color: black;
+      margin: 0px auto;
+    }
+    button{
+      margin-right:10px;
+      font-size: 24px;
+      background-color: #ccc;
+      padding: 8px;
+    }
+    #board{
+      width: 200px;
+      height: 200px;
+
+      font-size: 32px;
+      box-shadow: 0px 0px 3px black;
+      margin: 0px auto;
+      border-radius: 100px;
+      padding-top: 80px;
+      text-align: center;
+    }
+    button:focus{
+      box-shadow: 2px 2px 20px #000;
+    }
+    </style>
+ <div id="board"></div>
+<div id="pole"></div>
+
+
+<button  onclick="document.getElementById('board').style.backgroundColor='red'
+document.getElementById('board').innerHTML='STOP!'
+ document.getElementById('board').style.color='white'
+ ">STOP!</button>
+
+
+<button  onclick="document.getElementById('board').style.backgroundColor='Blue'
+document.getElementById('board').innerHTML='READY!'
+ document.getElementById('board').style.color='white'  "
+>READY!</button>
+<button onclick="document.getElementById('board').style.backgroundColor='GREEN'
+document.getElementById('board').innerHTML='GO!'
+ document.getElementById('board').style.color='white'"
+>GO!</button>
+
+  </body>
+  <script src="light.js" charset="utf-8"></script>
+
+</html>
